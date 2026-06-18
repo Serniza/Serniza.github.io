@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrés Serna — Unity Developer</title>
+  <style>
+    body 
+    {
+      background-color: #f5f5f5;
+      color: #222;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ── HEADER ── */
+    header 
+    {
+      background-color: #1a1a2e;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img 
+    {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid #4f8ef7;
+      margin-bottom: 16px;
+    }
+
+    header h1 
+    {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+    }
+
+    header p 
+    {
+      margin: 0 0 16px 0;
+      color: #aab0c0;
+      font-size: 15px;
+    }
+
+    header a 
+    {
+      color: #4f8ef7;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    header a:hover 
+    {
+      text-decoration: underline;
+    }
+
+    /* ── MAIN CONTENT ── */
+    main 
+    {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* ── SECTION TITLES ── */
+    h2 
+    {
+      font-size: 20px;
+      color: #1a1a2e;
+      border-bottom: 2px solid #4f8ef7;
+      padding-bottom: 6px;
+      margin-top: 48px;
+      margin-bottom: 24px;
+    }
+
+    /* ── PROJECT CARD ── */
+    .project 
+    {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .project h3 
+    {
+      margin: 0 0 4px 0;
+      font-size: 18px;
+      color: #1a1a2e;
+    }
+
+    .project .type 
+    {
+      font-size: 12px;
+      color: #4f8ef7;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .project p 
+    {
+      color: #444;
+      margin: 0 0 12px 0;
+      font-size: 15px;
+    }
+
+    .project ul 
+    {
+      color: #555;
+      font-size: 14px;
+      padding-left: 20px;
+      margin: 0 0 12px 0;
+    }
+
+    .project ul li 
+    {
+      margin-bottom: 4px;
+    }
+
+    .project .tags 
+    {
+      font-size: 13px;
+      color: #777;
+    }
+
+    .project a 
+    {
+      color: #4f8ef7;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .project a:hover 
+    {
+      text-decoration: underline;
+    }
+
+    /* ── VIDEO EMBED ── */
+    .video-wrap 
+    {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 12px;
+      border-radius: 6px;
+    }
+
+    .video-wrap iframe 
+    {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ── SKILLS TABLE ── */
+    table 
+    {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    table th 
+    {
+      background-color: #1a1a2e;
+      color: white;
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    table td 
+    {
+      padding: 10px 14px;
+      border-bottom: 1px solid #ddd;
+      color: #444;
+    }
+
+    table tr:last-child td 
+    {
+      border-bottom: none;
+    }
+
+    table tr:nth-child(even) td 
+    {
+      background-color: #f9f9f9;
+    }
+
+    /* ── FOOTER ── */
+    footer 
+    {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #ddd;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <!-- Replace the src below with your photo path or a base64 image -->
+  <img src="Photo.jpg" alt="Andrés Serna" />
+  <h1>Andrés Darío Serna Isaza</h1>
+  <p>Unity Developer with 6+ years of professional experience in mobile and live service games.</p>
+</header>
+
+<main>
+
+  <!-- ══ PROJECTS ══ -->
+  <h2>Projects</h2>
+  
+  <!-- PROJECT 1 -->
+  <div class="project">
+    <h3>Charon Island</h3>
+    <p class="type">Mobile Game · Personal Project · Google Play (discontinued)</p>
+    <div class="video-wrap">
+      <iframe src="https://youtube.com/shorts/Mn9V9aakmM8" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>
+      Solo-developed mobile game from concept to Google Play publication.
+      I implemented every system in the game.
+    </p>
+    <ul>
+      <li>Sound Manager with Audio Source pooling</li>
+      <li>Persistent save system and level management</li>
+      <li>Full UI including a dynamic on-screen joystick triggered on tap</li>
+      <li>Google Ads (AdMob) integration</li>
+    </ul>
+    <p class="tags"><strong>Tech:</strong> Unity · C# · Android · URP · Mobile</p>
+  
+    <a href="https://drive.google.com/drive/folders/1Oz0sr3-nAd_n6m6cxDvZYgUzA4cfnSX_?usp=drive_link" target="_blank">View code samples</a>
+    <br/>
+    <a href="https://drive.google.com/file/d/1-wl9lCU-5lrmTs1U29QkQE1-OCMqbJst/view?usp=sharing" target="_blank">Download APK</a>
+    <br/>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project">
+    <h3>Ulumina</h3>
+    <p class="type">Educational Game · Polygonus</p>
+    <p>
+      Top-down educational game with a semi-open world, shipped to a real audience.
+    </p>
+    <ul>
+      <li>Social systems, shop, pets, character customization</li>
+      <li>Pattern-detection and collection minigames</li>
+      <li>Online multiplayer UNO with Photon PUN</li>
+      <li>Custom Unity Editor tools</li>
+    </ul>
+    <p class="tags"><strong>Tech:</strong> Unity · C# · Photon PUN · Multiplayer · Editor Tools</p>
+    <a href="https://ulumina.co" target="_blank">↗ Visit project</a>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project">
+    <h3>Collectible Card Game Prototype</h3>
+    <p class="type">Turn-based · Personal Project</p>
+    <div class="video-wrap">
+      <iframe src="https://youtu.be/WDYrR58votE" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>
+      Collectible card game with turn-based combat. Near-complete and functional combat system built from scratch.
+    </p>
+    <ul>
+      <li>Full turn-based combat system</li>
+      <li>Card mechanics with effects and attributes</li>
+      <li>Hand, deck, and battlefield UI</li>
+      <li>Data-driven card definitions using ScriptableObjects</li>
+    </ul>
+    <p class="tags"><strong>Tech:</strong> Unity · C# · ScriptableObjects · Turn-based · UI</p>
+  </div>
+
+  <!-- PROJECT 4 -->
+  <div class="project">
+    <h3>Procedural Road & Intersection Tool</h3>
+    <p class="type">Editor Tool · Dream House Studios</p>
+    <div class="video-wrap">
+      <iframe src="https://youtu.be/geX-Le0ifZQ" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>
+      Spline-based tool for building roads and sidewalks inside Unity.
+      Automatic intersection detection, procedural mesh generation, and a road simulation with traffic lights.
+    </p>
+    <ul>
+      <li>Automatic intersection detection and mesh splitting</li>
+      <li>Procedural intersection mesh generation</li>
+      <li>Real-time editor handles for manual adjustment</li>
+      <li>Road simulation with lanes, traffic lights, and vehicles</li>
+    </ul>
+    <p class="tags"><strong>Tech:</strong> Unity · C# · Splines · Procedural Mesh · Custom Editor Tools</p>
+  </div>
+
+  <!-- PROJECT 5 -->
+  <div class="project">
+    <h3>Pixel Pit</h3>
+    <p class="type">Real-time Multiplayer · Personal Project</p>
+    <div class="video-wrap">
+      <iframe src="https://youtu.be/AEOWh55Evw4" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>
+      Multiplayer arena where players fight until only one remains.
+      I built the client, server, and multiplayer integration — everything except art and music.
+    </p>
+    <ul>
+      <li>Real-time communication with Socket.IO</li>
+      <li>Node.js + Express server deployed on Heroku</li>
+      <li>Game state synchronization across multiple clients</li>
+    </ul>
+    <p class="tags"><strong>Tech:</strong> Unity · C# · Node.js · Socket.IO · Express</p>
+  </div>
+
+  <!-- ══ SKILLS ══ -->
+  <h2>Tech Stack</h2>
+  <table>
+    <tr><th>Area</th><th>Technologies</th></tr>
+    <tr><td>Engine</td><td>Unity (URP, ShaderLab, Animator, Cinemachine, Timeline)</td></tr>
+    <tr><td>Languages</td><td>C#, JavaScript, Node.js</td></tr>
+    <tr><td>Architecture</td><td>ScriptableObject Architecture, MVP, Object Pooling, Singleton-as-Service</td></tr>
+    <tr><td>Multiplayer</td><td>Photon PUN, Socket.IO</td></tr>
+    <tr><td>Tools</td><td>Git, Gitflow, Sourcetree, Jira</td></tr>
+    <tr><td>Backend</td><td>Node.js, MongoDB</td></tr>
+    <tr><td>Platforms</td><td>Android, iOS, PC</td></tr>
+    <tr><td>Methodology</td><td>Scrum / Agile</td></tr>
+  </table>
+
+</main>
+
+<footer>
+  Andrés Darío Serna Isaza · Unity Developer · Medellín, Colombia
+</footer>
+
+</body>
+</html>
