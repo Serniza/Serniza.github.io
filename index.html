@@ -15,8 +15,7 @@
       margin: 0;
       padding: 0;
     }
-
-    /* ── HEADER ── */
+    
     header 
     {
       background-color: #1a1a2e;
@@ -61,8 +60,7 @@
     {
       text-decoration: underline;
     }
-
-    /* ── MAIN CONTENT ── */
+    
     main 
     {
       max-width: 800px;
@@ -70,7 +68,6 @@
       padding: 40px 20px;
     }
 
-    /* ── SECTION TITLES ── */
     h2 
     {
       font-size: 20px;
@@ -81,7 +78,6 @@
       margin-bottom: 24px;
     }
 
-    /* ── PROJECT CARD ── */
     .project 
     {
       background: white;
@@ -146,7 +142,6 @@
       text-decoration: underline;
     }
 
-    /* ── VIDEO EMBED ── */
     .video-wrap 
     {
       position: relative;
@@ -157,6 +152,16 @@
       border-radius: 6px;
     }
 
+    a.btn 
+    { 
+      display: inline-block;
+      background: #01875f; 
+      color: #fff; 
+      padding: 10px 18px;
+      border-radius: 6px; 
+      text-decoration: none; 
+    }
+
     .video-wrap iframe 
     {
       position: absolute;
@@ -165,7 +170,6 @@
       border: none;
     }
 
-    /* ── SKILLS TABLE ── */
     table 
     {
       width: 100%;
@@ -198,7 +202,6 @@
       background-color: #f9f9f9;
     }
 
-    /* ── FOOTER ── */
     footer 
     {
       text-align: center;
@@ -210,9 +213,8 @@
     }
   </style>
 </head>
+  
 <body>
-
-<!-- ══ HEADER ══ -->
 <header>
   <!-- Replace the src below with your photo path or a base64 image -->
   <img src="Photo.jpg" alt="Andrés Serna" />
@@ -221,11 +223,27 @@
 </header>
 
 <main>
-
-  <!-- ══ PROJECTS ══ -->
   <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Magic Customs House</h3>
+    <p class="type">Mobile Game · Personal Project · Google Play</p>
+    <src="Magic Cutoms House Gameplay.png" alt="Magic Magic Cutoms House Gameplay">
+    <p>
+      Solo-developed mobile game from concept to Google Play publication.
+      I implemented every system in the game.
+    </p>
+    <ul>
+      <li>Pooling system</li>
+      <li>Custom shaders to move the belt, increase the speed bar, etc</li>
+      <li>Game design</li>
+      <li>Google Ads (AdMob) integration</li>
+    </ul>
+    <p class="tags"><strong>Tech:</strong> Unity · C# · Android · URP · Mobile</p>
+
+    <p><a class="btn" href="https://play.google.com/store/apps/details?id=com.sernizagames.magiccustomshouse">Get it on Google Play</a></p>
+  </div>
   
-  <!-- PROJECT 1 -->
   <div class="project">
     <h3>Charon Island</h3>
     <p class="type">Mobile Game · Personal Project · Google Play (discontinued)</p>
@@ -250,7 +268,6 @@
     <br/>
   </div>
 
-  <!-- PROJECT 2 -->
   <div class="project">
     <h3>Ulumina</h3>
     <p class="type">Educational Game · Polygonus</p>
@@ -267,7 +284,6 @@
     <a href="https://ulumina.co" target="_blank">↗ Visit project</a>
   </div>
 
-  <!-- PROJECT 3 -->
   <div class="project">
     <h3>Collectible Card Game Prototype</h3>
     <p class="type">Turn-based · Personal Project</p>
@@ -286,7 +302,6 @@
     <p class="tags"><strong>Tech:</strong> Unity · C# · ScriptableObjects · Turn-based · UI</p>
   </div>
 
-  <!-- PROJECT 4 -->
   <div class="project">
     <h3>Procedural Road & Intersection Tool</h3>
     <p class="type">Editor Tool · Dream House Studios</p>
@@ -306,7 +321,6 @@
     <p class="tags"><strong>Tech:</strong> Unity · C# · Splines · Procedural Mesh · Custom Editor Tools</p>
   </div>
 
-  <!-- PROJECT 5 -->
   <div class="project">
     <h3>Pixel Pit</h3>
     <p class="type">Real-time Multiplayer · Personal Project</p>
@@ -325,7 +339,6 @@
     <p class="tags"><strong>Tech:</strong> Unity · C# · Node.js · Socket.IO · Express</p>
   </div>
 
-  <!-- ══ SKILLS ══ -->
   <h2>Tech Stack</h2>
   <table>
     <tr><th>Area</th><th>Technologies</th></tr>
